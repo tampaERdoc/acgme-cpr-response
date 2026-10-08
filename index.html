@@ -35,13 +35,15 @@
   h3{color:var(--green);font-size:19px;margin:30px 0 6px;font-weight:700}
   p.lead{font-size:17px;color:#333}
   .grey{color:var(--grey);font-size:15px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:16px 0}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:16px 0}
   .card{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff;display:flex;flex-direction:column;gap:6px}
   .card .t{font-weight:700;font-size:16px}
   .card .d{font-size:14px;color:var(--grey);flex:1}
-  .card a.btn{align-self:flex-start;margin-top:6px;background:var(--green);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:6px}
+  .card .links{display:flex;align-items:center;gap:10px;margin-top:8px;flex-wrap:wrap}
+  .card a.btn{background:var(--green);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:6px}
   .card a.btn:hover{background:var(--dark)}
-  .card .sz{font-size:12px;color:#8a8a8a;margin-left:8px}
+  .card .sz{font-size:11px;color:#cfe3d9;margin-left:6px;font-weight:400}
+  .card .sep{color:#b8c4be;font-weight:300}
   ul.list{padding-left:22px}
   ul.list li{margin:8px 0}
   ul.sum li b{color:var(--ink)}
@@ -108,13 +110,10 @@
 <h2 id="downloads">Downloads</h2>
 <p class="lead">Everything in one place: the guide, the editorial, the slide deck, and the cover image.</p>
 <div class="cards">
-  <div class="card"><div class="t">Response Guide (Word)</div><div class="d">The page-by-page guide on this site, as a Word document to keep beside the form.</div><div><a class="btn" href="files/ACGME_CPR_Response_Guide_USF_EM.docx" download>Download</a><span class="sz">52 KB</span></div></div>
-  <div class="card"><div class="t">Response Guide (PDF)</div><div class="d">Same guide as a PDF.</div><div><a class="btn" href="files/ACGME_CPR_Response_Guide_USF_EM.pdf" download>Download</a><span class="sz">317 KB</span></div></div>
-  <div class="card"><div class="t">Editorial (Word)</div><div class="d">“The ACGME Is About to Make Emergency Medicine Training Cheaper. Not Better.” Jason W. Wilson, MD, PhD.</div><div><a class="btn" href="files/ACGME_CPR_Editorial_Wilson.docx" download>Download</a><span class="sz">36 KB</span></div></div>
-  <div class="card"><div class="t">Editorial (PDF)</div><div class="d">Same editorial as a PDF.</div><div><a class="btn" href="files/ACGME_CPR_Editorial_Wilson.pdf" download>Download</a><span class="sz">105 KB</span></div></div>
-  <div class="card"><div class="t">Slide deck (PowerPoint)</div><div class="d">Each proposed change, its impact on Emergency Medicine, and the rebuttal. 20 slides on the USF EM template.</div><div><a class="btn" href="files/ACGME_CPR_Impact_and_Rebuttal_USF_EM.pptx" download>Download</a><span class="sz">2.2 MB</span></div></div>
-  <div class="card"><div class="t">Slide deck (PDF)</div><div class="d">Same deck as a PDF.</div><div><a class="btn" href="files/ACGME_CPR_Impact_and_Rebuttal_USF_EM.pdf" download>Download</a><span class="sz">546 KB</span></div></div>
-  <div class="card"><div class="t">Cover image (PNG)</div><div class="d">1920×1080 cover image used for the LinkedIn article.</div><div><a class="btn" href="files/ACGME_CPR_LinkedIn_Cover.png" download>Download</a><span class="sz">246 KB</span></div></div>
+  <div class="card"><div class="t">Response Guide</div><div class="d">The page-by-page guide on this site, as a document to keep beside the form.</div><div class="links"><a class="btn" href="files/ACGME_CPR_Response_Guide_USF_EM.docx" download>Word<span class="sz">52 KB</span></a><span class="sep">|</span><a class="btn" href="files/ACGME_CPR_Response_Guide_USF_EM.pdf" download>PDF<span class="sz">317 KB</span></a></div></div>
+  <div class="card"><div class="t">Editorial</div><div class="d">“The ACGME Is About to Make Emergency Medicine Training Cheaper. Not Better.” Jason W. Wilson, MD, PhD.</div><div class="links"><a class="btn" href="files/ACGME_CPR_Editorial_Wilson.docx" download>Word<span class="sz">36 KB</span></a><span class="sep">|</span><a class="btn" href="files/ACGME_CPR_Editorial_Wilson.pdf" download>PDF<span class="sz">105 KB</span></a></div></div>
+  <div class="card"><div class="t">Slide Deck</div><div class="d">Each proposed change, its impact on Emergency Medicine, and the rebuttal. 20 slides on the USF EM template.</div><div class="links"><a class="btn" href="files/ACGME_CPR_Impact_and_Rebuttal_USF_EM.pptx" download>PowerPoint<span class="sz">2.2 MB</span></a><span class="sep">|</span><a class="btn" href="files/ACGME_CPR_Impact_and_Rebuttal_USF_EM.pdf" download>PDF<span class="sz">546 KB</span></a></div></div>
+  <div class="card"><div class="t">Cover Image</div><div class="d">1920×1080 cover image used for the LinkedIn article.</div><div class="links"><a class="btn" href="files/ACGME_CPR_LinkedIn_Cover.png" download>PNG<span class="sz">246 KB</span></a></div></div>
 </div>
 <p class="grey">Official ACGME documents: <a href="https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cprresidency_rc_09082026.pdf">Proposed Major Revision of the Common Program Requirements (Residency), tracked changes (PDF)</a> · <a href="https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cpr_impact_09082026.pdf">Rationale and Impact Statement (PDF)</a></p>
 
